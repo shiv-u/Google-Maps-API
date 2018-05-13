@@ -1,4 +1,4 @@
-## Wanna play with Google Maps [press here]("https://shiv-u.github.io/Google-Maps-API/maps.html")
+## Wanna play with Google Maps [click here]("maps.html")
 
 ## Google Maps
 Google Maps is a web mapping service developed by Google. It offers satellite imagery, street maps, 360° panoramic views of streets (Street View), real-time traffic conditions (Google Traffic), and route planning for traveling by foot, car, bicycle (in beta), or public transportation.
@@ -28,8 +28,7 @@ Under Google Map's Api's choose Google Maps JavaScript API
 ### STEP 2:
 Enable the Api.Go to credentials section.Choose create Credentials.Choose API Key from the popup,and then choose browser key from the proceeding popup.
 ### STEP 3:
-Use the following script in you web page.
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>.
+Use the following script in you web page.<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 ### STEP 4:
 Replace the 'YOUR_API_KEY' with your own api key obtained
 
