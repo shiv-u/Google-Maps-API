@@ -29,7 +29,7 @@ Under Google Map's Api's choose Google Maps JavaScript API
 Enable the Api.Go to credentials section.Choose create Credentials.Choose API Key from the popup,and then choose browser key from the proceeding popup.
 ### STEP 3:
 Use the following script in you web page.
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+"<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>"
 ### STEP 4:
 Replace the 'YOUR_API_KEY' with your own api key obtained
 
