@@ -5,13 +5,13 @@ window.onload = function() {
 
 var options = {
 zoom: 3,
-center: new google.maps.LatLng(39.9312873,-105.16312470000003),
+center: new google.maps.LatLng(20.593684,78.96288000000004),
 mapTypeId: google.maps.MapTypeId.ROADMAP
 };
 map = new google.maps.Map(document.getElementById('map'), options);
 	var sin=new google.maps.Marker({
 		map:map,
-		title:"sindupramu's house",
+		
 		position:new google.maps.LatLng(39.9312873,-105.16312470000003)
 			});
 	var content='<div id="info">'+
