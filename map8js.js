@@ -5,31 +5,20 @@ window.onload = function() {
 
 var options = {
 zoom: 3,
-center: new google.maps.LatLng(20.593684,78.96288000000004),
+center: new google.maps.LatLng(39.9312873,-105.16312470000003),
 mapTypeId: google.maps.MapTypeId.ROADMAP
 };
 map = new google.maps.Map(document.getElementById('map'), options);
 	var sin=new google.maps.Marker({
 		map:map,
-		
+		title:'click me',
 		position:new google.maps.LatLng(39.9312873,-105.16312470000003)
 			});
-	var content='<div id="info">'+
-'<img src="img/sindpramu.png" alt="" />'+
-"<h1>sindhupramu's house</h1>"+"</br>"+
-'</div>';
-	google.maps.event.addListener(sin,'click',function(){
-		if(!infowindow){
-			var infowindow=new google.maps.InfoWindow();
-		}
-		infowindow.setContent(content);
-		infowindow.open(map,sin);
-		
-	});
+	
 	google.maps.event.addListener(sin,'click',function()
 	{
 		map.setOptions({
-		zoom:18,
+		
 		mapTypeId:google.maps.MapTypeId.SATELLITE
 		});
 		
@@ -66,7 +55,8 @@ map.setCenter(results[0].geometry.location);
 if (!marker) {
 
 marker = new google.maps.Marker({
-map: map
+map: map,
+title:'click me'
 });
 }
 
@@ -75,7 +65,9 @@ marker.setPosition(results[0].geometry.location);
 google.maps.event.addListener(marker,'click',function(){
 	
 	map.setOptions({
-		zoom:18
+		zoom:18,
+				mapTypeId:google.maps.MapTypeId.SATELLITE
+
 	});
 	
 	
