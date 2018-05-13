@@ -5,14 +5,14 @@ window.onload = function() {
 
 var options = {
 zoom: 3,
-center: new google.maps.LatLng(20.593684,78.96288000000004),
+center: new google.maps.LatLng(20.5937,78.9629),
 mapTypeId: google.maps.MapTypeId.ROADMAP
 };
 map = new google.maps.Map(document.getElementById('map'), options);
 	var sin=new google.maps.Marker({
 		map:map,
 		title:'click me',
-		position:new google.maps.LatLng(20.593684,78.96288000000004)
+		position:new google.maps.LatLng(20.5937,78.9629)
 			});
 	
 	google.maps.event.addListener(sin,'click',function()
